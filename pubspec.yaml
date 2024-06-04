@@ -1,0 +1,67 @@
+name: nust_dashboard
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  sizer: any
+  intl: any
+  lottie: any
+  video_player_android: any
+  video_player: ^2.8.6
+  circular_countdown: any
+  http: any
+  provider: any
+  fijkplayer: ^0.11.0
+  auto_start_flutter: ^0.1.1
+  flutter_native_splash: any
+  shimmer: any
+  dio: any
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.9.2"
+flutter_icons:
+  android: true
+  ios: true
+  windows: true
+  image_path: "images/uni.png"
+
+flutter_native_splash:
+  color: "#FAFAFA"
+  image: "images/uni.png"
+  android: true
+  ios: true
+
+  flutter_lints: ^3.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - images/
+    - assets/video/uni.mp4
+    - assets/101573-search-file.json
+    - assets/no-internet.json
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: fonts/Cairo-Regular.ttf
