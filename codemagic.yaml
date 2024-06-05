@@ -1,0 +1,37 @@
+workflows:
+  university-dashboard:
+    name: university dashboard
+    instance_type: mac_pro
+    max_build_duration: 100
+    environment:
+      flutter: stable
+      xcode: latest
+      cocoapods: 1.9.1
+      node: 12.14.0
+      npm: 6.13.7
+      ndk: r21d
+      java: 1.8
+      ruby: 2.7.2
+
+    triggering:
+      events:
+        - push
+        - pull_request
+        - tag
+      branch_patterns:
+        - pattern: *
+          include: true
+        - pattern: develop
+          include: true
+          source: true
+    scripts:
+      - name: get flutter packages
+        script: flutter packages pub get
+      - name: build apk
+        script: flutter build apk --release
+    artifacts:
+      - build/**/outputs/apk/**/*.apk
+    publishing:
+      email:
+        recipients:
+          - jafarsadaq511@gmail.com
