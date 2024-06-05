@@ -3,7 +3,7 @@ import 'package:nust_dashboard/views/exam_table.dart';
 import 'package:nust_dashboard/views/image_viewer.dart';
 import 'package:nust_dashboard/views/table.dar.dart';
 import 'package:nust_dashboard/views/text_view.dart';
-import 'package:nust_dashboard/views/video_player.dart';
+import 'package:nust_dashboard/views/video_viewer.dart';
 import 'package:nust_dashboard/widgets/loader.dart';
 import 'package:nust_dashboard/widgets/loading_page.dart';
 import 'package:nust_dashboard/widgets/no_table.dart';
@@ -39,7 +39,6 @@ class _MyHomePageState extends State<MyHomePage> {Stream? _exmTable;
   void initState() {
     super.initState();
     getTable();
-
   }
 
 
@@ -74,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {Stream? _exmTable;
                             url: snapshot.data!.url,
                           );
                         } else if (snapshot.data!.video!= "no") {
-                          return VideoScreen(
+                          return VideoViewer(
                             video: snapshot.data!.video,
                             url: snapshot.data!.url,
                           );

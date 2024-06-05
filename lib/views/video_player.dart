@@ -1,4 +1,4 @@
-import 'package:fijkplayer/fijkplayer.dart';
+/*import 'package:fijkplayer/fijkplayer.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
@@ -15,7 +15,6 @@ class VideoScreen extends StatefulWidget {
 }
 
 class _VideoScreenState extends State<VideoScreen> {
-  final FijkPlayer player = FijkPlayer();
 
   _VideoScreenState();
 
@@ -63,3 +62,4 @@ class _VideoScreenState extends State<VideoScreen> {
     player.release();
   }
 }
+*/

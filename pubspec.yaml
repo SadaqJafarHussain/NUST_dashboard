@@ -27,12 +27,10 @@ dependencies:
   sizer: any
   intl: any
   lottie: any
-  video_player_android: any
   video_player: ^2.8.6
   circular_countdown: any
   http: any
   provider: any
-  fijkplayer: ^0.11.0
   auto_start_flutter: ^0.1.1
   flutter_native_splash: any
   shimmer: any
