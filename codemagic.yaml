@@ -29,7 +29,7 @@ workflows:
       - name: build apk
         script: flutter build apk --release
     artifacts:
-      - build/**/outputs/apk/**/*.apk
+      - build/app/outputs/flutter-apk/app-release.apk
     publishing:
       email:
         recipients:
