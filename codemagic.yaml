@@ -10,7 +10,6 @@ workflows:
       cocoapods: 1.9.1
       node: 12.14.0
       npm: 6.13.7
-      ndk: r21d
       java: 1.8
       ruby: 2.7.2
 
