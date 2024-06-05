@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 workflows:
   university-dashboard:
     name: university dashboard
@@ -20,7 +20,7 @@ workflows:
         - pull_request
         - tag
       branch_patterns:
-        - pattern: *
+        - pattern: "*"
           include: true
         - pattern: develop
           include: true
@@ -36,6 +36,3 @@ workflows:
       email:
         recipients:
           - jafarsadaq511@gmail.com
-=======
-
->>>>>>> 8d515f6c95cf04d1b7b53be2446f2d16ef1675a7
