@@ -2,7 +2,7 @@
 workflows:
   university-dashboard:
     name: university dashboard
-    instance_type: mac_pro
+    instance_type: mac_mini
     max_build_duration: 100
     environment:
       flutter: stable
