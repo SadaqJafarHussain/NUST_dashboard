@@ -10,7 +10,7 @@ workflows:
       cocoapods: 1.9.1
       node: 12.14.0
       npm: 6.13.7
-      java: 1.8
+      java: 11
 
     triggering:
       events:
