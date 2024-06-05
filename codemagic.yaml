@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 workflows:
   university-dashboard:
     name: university dashboard
@@ -35,3 +36,6 @@ workflows:
       email:
         recipients:
           - jafarsadaq511@gmail.com
+=======
+
+>>>>>>> 8d515f6c95cf04d1b7b53be2446f2d16ef1675a7
