@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
 import 'dart:async';
-import 'package:flutter/services.dart';
-import 'package:auto_start_flutter/auto_start_flutter.dart';
 import 'Providers/app_provider.dart';
 import 'home_page.dart';
 
@@ -52,20 +50,6 @@ class _RestartWidgetState extends State<RestartWidget> {
   void initState() {
     super.initState();
     //call in init state;
-    initAutoStart();
-  }
-
-  Future<void> initAutoStart() async {
-    try {
-      //check auto-start availability.
-      var test = await (isAutoStartAvailable);
-      print(test);
-      //if available then navigate to auto-start setting page.
-      if (test!) await getAutoStartPermission();
-    } on PlatformException catch (e) {
-      print(e);
-    }
-    if (!mounted) return;
   }
 
   Key key = UniqueKey();

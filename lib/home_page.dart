@@ -3,7 +3,7 @@ import 'package:nust_dashboard/views/exam_table.dart';
 import 'package:nust_dashboard/views/image_viewer.dart';
 import 'package:nust_dashboard/views/table.dar.dart';
 import 'package:nust_dashboard/views/text_view.dart';
-import 'package:nust_dashboard/views/video_viewer.dart';
+import 'package:nust_dashboard/views/my_tv_screen.dart';
 import 'package:nust_dashboard/widgets/loader.dart';
 import 'package:nust_dashboard/widgets/loading_page.dart';
 import 'package:nust_dashboard/widgets/no_table.dart';
@@ -40,8 +40,6 @@ class _MyHomePageState extends State<MyHomePage> {Stream? _exmTable;
     super.initState();
     getTable();
   }
-
-
    getTable()async{
      final response=await http.get(Uri.parse("https://wakel.info/collage/api/daily/read.php?day_name=${intel.DateFormat("EEEE").format(DateTime.now()).substring(0,3)}"));
      String time=intel.DateFormat("y-MM-dd").format(DateTime.now());
@@ -73,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {Stream? _exmTable;
                             url: snapshot.data!.url,
                           );
                         } else if (snapshot.data!.video!= "no") {
-                          return VideoViewer(
+                          return MyTvScreen(
                             video: snapshot.data!.video,
                             url: snapshot.data!.url,
                           );

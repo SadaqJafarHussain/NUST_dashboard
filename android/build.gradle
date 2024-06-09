@@ -1,8 +1,13 @@
+
 allprojects {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url 'https://artifacts.bitmovin.com/artifactory/public-releases'
+        }
     }
+
 }
 
 rootProject.buildDir = "../build"
